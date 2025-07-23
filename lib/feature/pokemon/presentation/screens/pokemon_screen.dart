@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:paisa_example/core/utils/extensions.dart';
 import 'package:paisa_example/core/utils/routes/app_routes_name.dart';
 import 'package:paisa_example/di.dart';
 import 'package:paisa_example/feature/pokemon/presentation/controllers/pokemon_controller.dart';
@@ -27,7 +28,7 @@ class PokemonPage extends StatelessWidget {
           child: Column(
             children: [
               PokemonSearchBar(), // <-- asegúrate que internamente usa controller.searchById
-              const SizedBox(height: 20),
+              20.ph,
               if (controller.searchResult.value != null)
                 Column(
                   children: [
@@ -41,9 +42,9 @@ class PokemonPage extends StatelessWidget {
                     CaptureButton(),
                   ],
                 ),
-              const SizedBox(height: 30),
+              30.ph,
               const Text('Pokémon capturados', style: TextStyle(fontSize: 18)),
-              const SizedBox(height: 10),
+              10.ph,
               Expanded(child: CapturedPokemonList()),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:paisa_example/core/utils/extensions.dart';
 import '../controller/login_controller.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -32,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                 decoration: const InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
-              const SizedBox(height: 20),
+              20.ph,
               ElevatedButton(
                 onPressed: () {
                   controller.login(

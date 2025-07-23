@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:paisa_example/core/utils/extensions.dart';
 import 'package:paisa_example/feature/splash/presentation/controller/splash_controller.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -47,7 +48,7 @@ class SplashScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  30.ph,
                   const Text(
                     'Pokémon Trainer',
                     style: TextStyle(
@@ -57,7 +58,7 @@ class SplashScreen extends StatelessWidget {
                       letterSpacing: 1.5,
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  20.ph,
                   const CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                   ),
