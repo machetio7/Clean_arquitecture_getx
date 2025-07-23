@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:paisa_example/core/utils/extensions.dart';
-import 'package:paisa_example/core/utils/routes/app_routes_name.dart';
 import 'package:paisa_example/di.dart';
 import 'package:paisa_example/feature/pokemon/presentation/controllers/pokemon_controller.dart';
 import 'package:paisa_example/feature/pokemon/presentation/widgets/%20pokemon_search_bar.dart';
